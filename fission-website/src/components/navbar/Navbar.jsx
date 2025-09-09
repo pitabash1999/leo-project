@@ -1,7 +1,7 @@
 import "./navbar.css";
 import leo from "../../assets/leo.png";
 import dark from "../../assets/theme-icon.gif";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTheme } from "../../ThemeProvider";
 
 const Navbar = ({ openService, openAbout }) => {
@@ -46,7 +46,10 @@ const Navbar = ({ openService, openAbout }) => {
   return (
     <nav className="w-full h-20 bg-white border-b-1 text-black flex justify-between items-center px-4 sticky top-0 z-50">
       {/* left side logo and text */}
-      <div className="w-1/4 text-center flex items-center justify-center gap-2 cursor-pointer">
+      <div
+        className="w-1/4 text-center flex items-center justify-center gap-2 cursor-pointer"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
         <img src={leo} alt="logo" className="h-14 w-14" />
         <span className="epunda-sans-leo text-4xl">leo9 </span>
       </div>
