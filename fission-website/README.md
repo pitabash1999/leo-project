@@ -84,7 +84,7 @@ ui-project/
 
 ## Demo
 
-[UI Project Demo](https://leo-project-gva19m3sj-pitabash-beheras-projects.vercel.app)
+[UI Project Demo](leo-project-nine.vercel.app)
 
 ---
 
